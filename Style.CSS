@@ -1,41 +1,45 @@
-body {
-  margin: 0;
-  background-color: #2b2b2b;
-  color: white;
-  text-align: center;
-  font-family: 'Oswald', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');  
+        *{margin: 0;
+          border: 0;
+          padding: 0;
+        }
+        body{background-color: #252525;}
+
+        header{
+            padding: 32px;
+            border-bottom: 2px solid #333;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        header div { text-align: center;
+
+          
+        }
+        header div a { color: white;
+                font-size:24px;
+             line-height: 30px;
+                margin: 0 6px;
+                text-decoration: none;
+                font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+        header div a:hover{
+             color: #132cbb;
+             font-size: 23px;
+             transition: color 700ms;
+             border-bottom: 5px solid #132cbb;
+             }
+
+.foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 210px;
+    flex-direction: column;
 }
 
-header {
-  background-color: #1a1a1a;
-  padding: 15px;
-  border-bottom: 2px solid #a0005a;
-}
-
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: #ff4da6;
-}
-
-main {
-  margin-top: 100px;
-}
-
-/* Nome */
-h1 {
-  font-family: 'Bungee', cursive;
-  font-size: 50px;
-  margin-bottom: 10px;
-}
-
-/* Subtítulo */
-h2 {
-  font-family: 'Bungee', cursive;
-  font-size: 22px;
-  color: #cfcfcf;
+.foto img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
 }
