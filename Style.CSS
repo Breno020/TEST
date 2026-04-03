@@ -1,45 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');  
-        *{margin: 0;
-          border: 0;
-          padding: 0;
-        }
-        body{background-color: #252525;}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-        header{
-            padding: 32px;
-            border-bottom: 2px solid #333;
-            background-color: rgba(0, 0, 0, 0.1);
-        }
-        header div { text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
-          
-        }
-        header div a { color: white;
-                font-size:24px;
-             line-height: 30px;
-                margin: 0 6px;
-                text-decoration: none;
-                font-family: 'Roboto', sans-serif;
-            text-align: center;
-        }
-        header div a:hover{
-             color: #132cbb;
-             font-size: 23px;
-             transition: color 700ms;
-             border-bottom: 5px solid #132cbb;
-             }
+body{
+    background-color: var(--black);
+}
 
-.foto {
+header{
+    padding: 32px;
+    border-bottom: 2px solid #333;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+header div{
+    text-align: center;
+}
+
+header div a{
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0 6px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+:root {
+    --black: #252525;
+    --blue: #132cbb;
+}
+
+header div a:hover{
+    color: var(--blue);
+    font-size: 23px;
+    transition: color 700ms;
+    border-bottom: 5px solid var(--blue);
+}
+
+.foto{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 210px;
     flex-direction: column;
+    margin-top: 210px;
 }
 
-.foto img {
+#perfil{
+    padding: 20px;
+}
+
+.foto img{
     width: 300px;
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.foto h1{
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.foto p{
+    color: var(--blue);
+    font-family: 'Roboto', sans-serif;
 }
