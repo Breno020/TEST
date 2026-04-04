@@ -59,6 +59,7 @@ header div a:hover{
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
+    border: 1px solid blue;
 }
 
 .foto h1{
@@ -69,4 +70,22 @@ header div a:hover{
 .foto p{
     color: var(--blue);
     font-family: 'Roboto', sans-serif;
+}
+
+#linksfooter {
+    text-align: center;
+}
+
+#linksfooter a {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin: 0 6px;
+    font-size: 24px;
+    border-bottom: 1px solid blue;
+    }
+
+#linksfooter a:hover {
+    color: #132cbb;
+    transition: 700ms;
 }
